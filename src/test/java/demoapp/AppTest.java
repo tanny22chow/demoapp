@@ -22,7 +22,7 @@ public class AppTest
     WebDriver d;
     @Test
     public void shouldAnswerWithTrue() throws MalformedURLException {
-        d=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),DesiredCapabilities.firefox());
+        d=new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),DesiredCapabilities.chrome());
         d.get("https://www.google.com");
         System.out.println(d.getTitle());
 
